@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="MidoriAPI">
+      <UniqueIdentifier>{00d64a43-c087-41a7-b488-ad458420ec61}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MidoriApi.cpp">
+      <Filter>MidoriAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonMath.cpp">
+      <Filter>MidoriAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="NintendoIdentifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AyumiScript.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NintendoIdentifier.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Segment.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.hpp">
+      <Filter>MidoriAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="View.hpp">
+      <Filter>MidoriAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.hpp">
+      <Filter>MidoriAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.hpp">
+      <Filter>MidoriAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.hpp">
+      <Filter>MidoriAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.hpp">
+      <Filter>MidoriAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.hpp">
+      <Filter>MidoriAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="MidoriApi.hpp">
+      <Filter>MidoriAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.hpp">
+      <Filter>MidoriAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonMath.hpp">
+      <Filter>MidoriAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="DefinedData.hpp">
+      <Filter>MidoriAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameBuffer.hpp">
+      <Filter>MidoriAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.hpp">
+      <Filter>MidoriAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="NintendoFrames.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NintendoShaders.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Invariants.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AyumiScript.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualMachine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

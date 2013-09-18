@@ -1,0 +1,84 @@
+Sky
+gfx/tiles/0.png
+Ground 0
+gfx/tiles/1.png
+Ground 1
+gfx/tiles/2.png
+Ground 2
+gfx/tiles/3.png
+Ground 3
+gfx/tiles/4.png
+Ground 4
+gfx/tiles/5.png
+Ground 5
+gfx/tiles/6.png
+Cloud 0 
+gfx/tiles/7.png
+Cloud 1
+gfx/tiles/8.png
+Cloud 2
+gfx/tiles/9.png
+Cloud 3
+gfx/tiles/10.png
+Cloud 4
+gfx/tiles/11.png
+Cloud 5
+gfx/tiles/12.png
+Ground
+gfx/tiles/13.png
+Block 0
+gfx/tiles/14.png
+Block 1
+gfx/tiles/15.png
+Block 2
+gfx/tiles/16.png
+Block 3
+gfx/tiles/17.png
+Block 4
+gfx/tiles/18.png
+Block 5
+gfx/tiles/19.png
+Block 6
+gfx/tiles/20.png
+Block 7
+gfx/tiles/21.png
+Block 8
+gfx/tiles/22.png
+Grass 0
+gfx/tiles/23.png
+Pipe 0
+gfx/tiles/24.png
+Pipe 1
+gfx/tiles/25.png
+Pipe 2
+gfx/tiles/26.png
+Pipe 3
+gfx/tiles/27.png
+Pipe 4
+gfx/tiles/28.png
+Pipe 5
+gfx/tiles/29.png
+Pipe 6
+gfx/tiles/30.png
+Pipe 7
+gfx/tiles/31.png
+Mountain 0
+gfx/tiles/32.png
+Mountain 1
+gfx/tiles/33.png
+Mountain 2
+gfx/tiles/34.png
+Mountain 3
+gfx/tiles/35.png
+Mountain 4
+gfx/tiles/36.png
+Mountain 5
+gfx/tiles/37.png
+Mountain 6
+gfx/tiles/38.png
+Mountain 7
+gfx/tiles/39.png
+Mountain 8
+gfx/tiles/40.png
+Mountain 9
+gfx/tiles/41.png

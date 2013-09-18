@@ -1,0 +1,10 @@
+Camera blocked
+gfx/collisions/0.png
+Terrain collision
+gfx/collisions/1.png
+Block collision
+gfx/collisions/2.png
+Death collision
+gfx/collisions/3.png
+Coin collision
+gfx/collisions/4.png

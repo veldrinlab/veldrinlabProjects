@@ -1,0 +1,6 @@
+Mario
+gfx/entities/0.png
+Kuribo
+gfx/entities/1.png
+Nokonoko
+gfx/entities/2.png
