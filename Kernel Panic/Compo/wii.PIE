@@ -1,0 +1,17 @@
+﻿Key.Z = wiimote.A
+Key.X = wiimote.B
+Key.Up = wiimote.Up
+Key.Down = wiimote.Down
+Key.Left = wiimote.Left
+Key.Right = wiimote.Right
+if (wiimote.MotionPlus.PitchSpeed < -200)
+   Key.Space = TRUE
+else
+    Key.Space = FALSE
+endif
+
+if (wiimote.B == TRUE)
+   wiimote.Rumble  = TRUE
+else
+    wiimote.Rumble = FALSE
+endif

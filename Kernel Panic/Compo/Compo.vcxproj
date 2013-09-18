@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F4C783A7-589F-4FC4-8BA8-66F4D10F2A0A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Compo</RootNamespace>
+    <ProjectName>Kernel Panic</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\externals\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\externals\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\externals\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\externals\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;SDL_mixer.lib;SDL_image.lib;OpenGL32.lib;Glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\AudioManager.cpp" />
+    <ClCompile Include="Engine\Engine.cpp" />
+    <ClCompile Include="Engine\ExplosionEffect.cpp" />
+    <ClCompile Include="Engine\Extensions.cpp" />
+    <ClCompile Include="Engine\InputManager.cpp" />
+    <ClCompile Include="Engine\Particle.cpp" />
+    <ClCompile Include="Engine\Renderer.cpp" />
+    <ClCompile Include="Engine\SceneManager.cpp" />
+    <ClCompile Include="Engine\SceneNode.cpp" />
+    <ClCompile Include="Engine\Shader.cpp" />
+    <ClCompile Include="Engine\Timer.cpp" />
+    <ClCompile Include="Engine\VBO.cpp" />
+    <ClCompile Include="Engine\WindowManager.cpp" />
+    <ClCompile Include="Game\Animation.cpp" />
+    <ClCompile Include="Game\Configuration.cpp" />
+    <ClCompile Include="Game\Enemy.cpp" />
+    <ClCompile Include="Game\Game.cpp" />
+    <ClCompile Include="Game\GameHud.cpp" />
+    <ClCompile Include="Game\GameState.cpp" />
+    <ClCompile Include="Game\HealthBar.cpp" />
+    <ClCompile Include="Game\Kernel.cpp" />
+    <ClCompile Include="Game\PlayerPad.cpp" />
+    <ClCompile Include="Game\PlayerWii.cpp" />
+    <ClCompile Include="Game\Sword.cpp" />
+    <ClCompile Include="Game\Tower.cpp" />
+    <ClCompile Include="Game\World.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Math\Matrix4.cpp" />
+    <ClCompile Include="Math\Quatenion.cpp" />
+    <ClCompile Include="Math\Vector3D.cpp" />
+    <ClCompile Include="ResourceManager\Mesh.cpp" />
+    <ClCompile Include="ResourceManager\Resource.cpp" />
+    <ClCompile Include="ResourceManager\ResourceManager.cpp" />
+    <ClCompile Include="ResourceManager\Texture.cpp" />
+    <ClCompile Include="Utils\BoundingSphere.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\AudioManager.hpp" />
+    <ClInclude Include="Engine\Device.hpp" />
+    <ClInclude Include="Engine\Engine.hpp" />
+    <ClInclude Include="Engine\ExplosionEffect.hpp" />
+    <ClInclude Include="Engine\Extensions.hpp" />
+    <ClInclude Include="Engine\GamePad.hpp" />
+    <ClInclude Include="Engine\InputManager.hpp" />
+    <ClInclude Include="Engine\Keyboard.hpp" />
+    <ClInclude Include="Engine\Mouse.hpp" />
+    <ClInclude Include="Engine\Particle.hpp" />
+    <ClInclude Include="Engine\Renderer.hpp" />
+    <ClInclude Include="Engine\SceneEntity.hpp" />
+    <ClInclude Include="Engine\SceneManager.hpp" />
+    <ClInclude Include="Engine\SceneNode.hpp" />
+    <ClInclude Include="Engine\Shader.hpp" />
+    <ClInclude Include="Engine\Timer.hpp" />
+    <ClInclude Include="Engine\VBO.hpp" />
+    <ClInclude Include="Engine\WiiMote.hpp" />
+    <ClInclude Include="Engine\WindowManager.hpp" />
+    <ClInclude Include="Game\Animation.hpp" />
+    <ClInclude Include="Game\AnimationFrameCoords.hpp" />
+    <ClInclude Include="Game\Configuration.hpp" />
+    <ClInclude Include="Game\Enemy.hpp" />
+    <ClInclude Include="Game\Game.hpp" />
+    <ClInclude Include="Game\GameHud.hpp" />
+    <ClInclude Include="Game\GameState.hpp" />
+    <ClInclude Include="Game\HealthBar.hpp" />
+    <ClInclude Include="Game\Kernel.hpp" />
+    <ClInclude Include="Game\PlayerPad.hpp" />
+    <ClInclude Include="Game\PlayerWii.hpp" />
+    <ClInclude Include="Game\Sword.hpp" />
+    <ClInclude Include="Game\Tower.hpp" />
+    <ClInclude Include="Game\World.hpp" />
+    <ClInclude Include="glext.h" />
+    <ClInclude Include="Math\Matrix4.hpp" />
+    <ClInclude Include="Math\Quaternion.hpp" />
+    <ClInclude Include="Math\Vector3D.hpp" />
+    <ClInclude Include="ResourceManager\Mesh.hpp" />
+    <ClInclude Include="ResourceManager\Resource.hpp" />
+    <ClInclude Include="ResourceManager\ResourceManager.hpp" />
+    <ClInclude Include="ResourceManager\ResourceType.hpp" />
+    <ClInclude Include="ResourceManager\Texture.hpp" />
+    <ClInclude Include="ResourceManager\TypeNotFoundException.hpp" />
+    <ClInclude Include="Utils\BoundingSphere.hpp" />
+    <ClInclude Include="Utils\Color.hpp" />
+    <ClInclude Include="Utils\Random.hpp" />
+    <ClInclude Include="Utils\TextureCoord.hpp" />
+    <ClInclude Include="Utils\Vertex.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
