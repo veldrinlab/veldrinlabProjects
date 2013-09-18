@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{554C2E1C-0B84-4DA5-842D-A49126611604}</ProjectGuid>
+    <RootNamespace>StarWarsRogueTeam</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\externals\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\externals\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\externals\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\externals\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG; _CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;SDL_ttf.lib;SDL_mixer.lib;SDL_image.lib;OpenGL32.lib;Glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioManager.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CollisionDetector.cpp" />
+    <ClCompile Include="Configuration.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Extensions.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SceneNode.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="SkyBox.cpp" />
+    <ClCompile Include="Terrain.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="WindowManager.cpp" />
+    <ClCompile Include="Asteroid.cpp" />
+    <ClCompile Include="ATST.cpp" />
+    <ClCompile Include="EnemyPrototypeFactory.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameHud.cpp" />
+    <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="LaserBlast.cpp" />
+    <ClCompile Include="LevelManager.cpp" />
+    <ClCompile Include="StarDestroyer.cpp" />
+    <ClCompile Include="TieFighter.cpp" />
+    <ClCompile Include="Xwing.cpp" />
+    <ClCompile Include="Matrix4.cpp" />
+    <ClCompile Include="Quatenion.cpp" />
+    <ClCompile Include="Vector3D.cpp" />
+    <ClCompile Include="ResourceManager\Mesh.cpp" />
+    <ClCompile Include="ResourceManager\Resource.cpp" />
+    <ClCompile Include="ResourceManager\ResourceManager.cpp" />
+    <ClCompile Include="ResourceManager\Texture.cpp" />
+    <ClCompile Include="BackMenuState.cpp" />
+    <ClCompile Include="BattleOfHothMenuState.cpp" />
+    <ClCompile Include="BattleOfMindorMenuState.cpp" />
+    <ClCompile Include="ChooseLevelMenuState.cpp" />
+    <ClCompile Include="ColorDepthMenuState.cpp" />
+    <ClCompile Include="Menu\CreditsMenuState.cpp" />
+    <ClCompile Include="GameMenuState.cpp" />
+    <ClCompile Include="Menu\IMenuState.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Menu\MenuStateContext.cpp" />
+    <ClCompile Include="Menu\OptionsMenuState.cpp" />
+    <ClCompile Include="Menu\QuitMenuState.cpp" />
+    <ClCompile Include="ResolutionMenuState.cpp" />
+    <ClCompile Include="Menu\ShowCreditsMenuState.cpp" />
+    <ClCompile Include="ShowOptionsMenuState.cpp" />
+    <ClCompile Include="BoundingBox.cpp" />
+    <ClCompile Include="VBO.cpp" />
+    <ClCompile Include="DestroyEffect.cpp" />
+    <ClCompile Include="ExplosionEffect.cpp" />
+    <ClCompile Include="Fog.cpp" />
+    <ClCompile Include="Lighting.cpp" />
+    <ClCompile Include="MotionBlur.cpp" />
+    <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="SpecialFXManager.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioManager.hpp" />
+    <ClInclude Include="Camera.hpp" />
+    <ClInclude Include="Collision.hpp" />
+    <ClInclude Include="CollisionDetector.hpp" />
+    <ClInclude Include="Configuration.hpp" />
+    <ClInclude Include="Device.hpp" />
+    <ClInclude Include="Engine.hpp" />
+    <ClInclude Include="Extensions.hpp" />
+    <ClInclude Include="InputManager.hpp" />
+    <ClInclude Include="Keyboard.hpp" />
+    <ClInclude Include="Mouse.hpp" />
+    <ClInclude Include="Renderer.hpp" />
+    <ClInclude Include="SceneEntity.hpp" />
+    <ClInclude Include="SceneManager.hpp" />
+    <ClInclude Include="SceneNode.hpp" />
+    <ClInclude Include="Shader.hpp" />
+    <ClInclude Include="SkyBox.hpp" />
+    <ClInclude Include="Terrain.hpp" />
+    <ClInclude Include="Timer.hpp" />
+    <ClInclude Include="WindowManager.hpp" />
+    <ClInclude Include="Asteroid.hpp" />
+    <ClInclude Include="ATST.hpp" />
+    <ClInclude Include="EnemyPrototype.hpp" />
+    <ClInclude Include="EnemyPrototypeFactory.hpp" />
+    <ClInclude Include="Faction.hpp" />
+    <ClInclude Include="Game.hpp" />
+    <ClInclude Include="GameHud.hpp" />
+    <ClInclude Include="GameState.hpp" />
+    <ClInclude Include="LaserBlast.hpp" />
+    <ClInclude Include="Level.hpp" />
+    <ClInclude Include="LevelManager.hpp" />
+    <ClInclude Include="ShootedLasers.hpp" />
+    <ClInclude Include="StarDestroyer.hpp" />
+    <ClInclude Include="TieFighter.hpp" />
+    <ClInclude Include="Xwing.hpp" />
+    <ClInclude Include="Matrix4.hpp" />
+    <ClInclude Include="Quaternion.hpp" />
+    <ClInclude Include="Vector3D.hpp" />
+    <ClInclude Include="ResourceManager\BitMapException.hpp" />
+    <ClInclude Include="ResourceManager\Mesh.hpp" />
+    <ClInclude Include="ResourceManager\Resource.hpp" />
+    <ClInclude Include="ResourceManager\ResourceManager.hpp" />
+    <ClInclude Include="ResourceManager\ResourceType.hpp" />
+    <ClInclude Include="ResourceManager\Texture.hpp" />
+    <ClInclude Include="ResourceManager\TypeNotFoundException.hpp" />
+    <ClInclude Include="BackMenuState.hpp" />
+    <ClInclude Include="BattleOfHothMenuState.hpp" />
+    <ClInclude Include="BattleOfMindorMenuState.hpp" />
+    <ClInclude Include="ChooseLevelMenuState.hpp" />
+    <ClInclude Include="ColorDepthMenuState.hpp" />
+    <ClInclude Include="Menu\CreditsMenuState.hpp" />
+    <ClInclude Include="FontException.hpp" />
+    <ClInclude Include="GameMenuState.hpp" />
+    <ClInclude Include="IGameState.hpp" />
+    <ClInclude Include="Menu\IGameState.hpp" />
+    <ClInclude Include="Menu\IMenuState.hpp" />
+    <ClInclude Include="Menu.hpp" />
+    <ClInclude Include="Menu\MenuStateContext.hpp" />
+    <ClInclude Include="Menu\OptionsMenuState.hpp" />
+    <ClInclude Include="Menu\QuitMenuState.hpp" />
+    <ClInclude Include="ResolutionMenuState.hpp" />
+    <ClInclude Include="Menu\ShowCreditsMenuState.hpp" />
+    <ClInclude Include="ShowOptionsMenuState.hpp" />
+    <ClInclude Include="Menu\TextCreationException.hpp" />
+    <ClInclude Include="BoundingBox.hpp" />
+    <ClInclude Include="Color.hpp" />
+    <ClInclude Include="Random.hpp" />
+    <ClInclude Include="TextureCoord.hpp" />
+    <ClInclude Include="VBO.hpp" />
+    <ClInclude Include="Vertex.hpp" />
+    <ClInclude Include="DestroyEffect.hpp" />
+    <ClInclude Include="ExplosionEffect.hpp" />
+    <ClInclude Include="Fog.hpp" />
+    <ClInclude Include="Lighting.hpp" />
+    <ClInclude Include="MotionBlur.hpp" />
+    <ClInclude Include="Particle.hpp" />
+    <ClInclude Include="SpecialFX.hpp" />
+    <ClInclude Include="SpecialFXManager.hpp" />
+    <ClInclude Include="glext.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

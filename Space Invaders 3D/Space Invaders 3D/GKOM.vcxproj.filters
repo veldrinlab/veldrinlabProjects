@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{820066df-3d67-40a3-9de9-ebfdd98913c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{3e2b6a5c-8434-469d-b773-9c385a604b1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{ad49b0a4-af08-4f04-a2e6-b701cf35cdec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpecialFX">
+      <UniqueIdentifier>{df419278-d25c-4235-a322-b7af0b2615c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDetector.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Extensions.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyBox.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowManager.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameHud.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Invader.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="LaserBlast.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceShip.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingBox.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="VBO.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3D.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="DestroyEffect.cpp">
+      <Filter>SpecialFX</Filter>
+    </ClCompile>
+    <ClCompile Include="ExplosionEffect.cpp">
+      <Filter>SpecialFX</Filter>
+    </ClCompile>
+    <ClCompile Include="Fog.cpp">
+      <Filter>SpecialFX</Filter>
+    </ClCompile>
+    <ClCompile Include="Lighting.cpp">
+      <Filter>SpecialFX</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle.cpp">
+      <Filter>SpecialFX</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDetector.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Device.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Extensions.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneEntity.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyBox.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowManager.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameHud.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Invader.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="LaserBlast.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceShip.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingBox.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="glext.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureCoord.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="VBO.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3D.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="DestroyEffect.h">
+      <Filter>SpecialFX</Filter>
+    </ClInclude>
+    <ClInclude Include="ExplosionEffect.h">
+      <Filter>SpecialFX</Filter>
+    </ClInclude>
+    <ClInclude Include="Fog.h">
+      <Filter>SpecialFX</Filter>
+    </ClInclude>
+    <ClInclude Include="Lighting.h">
+      <Filter>SpecialFX</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
+      <Filter>SpecialFX</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
